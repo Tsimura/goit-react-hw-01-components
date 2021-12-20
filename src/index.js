@@ -1,3 +1,8 @@
+import React from 'react';
+
+// тест зборки
+const element = React.createElement('div');
+console.log(element);
 // ===================================================
 // import React from 'react';
 // import ReactDOM from 'react-dom';
