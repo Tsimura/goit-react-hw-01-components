@@ -1,6 +1,4 @@
 import PropTypes from 'prop-types';
-// import { string } from 'prop-types';
-// import { user } from './user.json';
 
 const DescriptionProfile = ({
   avatar,

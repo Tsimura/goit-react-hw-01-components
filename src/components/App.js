@@ -1,5 +1,5 @@
 import DescriptionProfile from 'components/DescriptionProfile/DescriptionProfile';
-// import { useReducer } from 'react';
+
 import user from './DescriptionProfile/user.json';
 
 export default function App() {
