@@ -1,4 +1,23 @@
 import PropTypes from 'prop-types';
+import transactions from './transactions.json';
+
+const Transactions = ({ type, amount, currency }) => {
+  return (
+    <tr>
+      <td>{type}</td>
+      <td>{amount}</td>
+      <td>{currency}</td>
+    </tr>
+  );
+};
+
+Transactions.propTypes = {
+  amount: PropTypes.number,
+  type: PropTypes.string,
+  currency: PropTypes.string,
+};
+
+export default Transactions;
 
 // <table class="transaction-history">
 //   <thead>
