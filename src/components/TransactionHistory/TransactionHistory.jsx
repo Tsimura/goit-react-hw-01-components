@@ -12,8 +12,8 @@ const Transactions = ({ type, amount, currency }) => {
 };
 
 Transactions.propTypes = {
-  amount: PropTypes.number,
   type: PropTypes.string,
+  amount: PropTypes.string,
   currency: PropTypes.string,
 };
 

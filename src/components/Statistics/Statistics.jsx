@@ -18,3 +18,8 @@ Statistics.propTypes = {
   stats: PropTypes.object,
 };
 export default Statistics;
+
+{
+  /* <Statistics title="Upload stats" stats={data} />;
+<Statistics stats={data} />; */
+}

@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const DescriptionProfile = ({
+const Profile = ({
   avatar,
   username = 'user not found',
   tag,
@@ -36,7 +36,7 @@ const DescriptionProfile = ({
   );
 };
 
-DescriptionProfile.propTypes = {
+Profile.propTypes = {
   avatar: PropTypes.string,
   username: PropTypes.string,
   tag: PropTypes.string,
@@ -46,4 +46,4 @@ DescriptionProfile.propTypes = {
   likes: PropTypes.number,
 };
 
-export default DescriptionProfile;
+export default Profile;

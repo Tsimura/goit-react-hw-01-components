@@ -1,4 +1,4 @@
-import DescriptionProfile from 'components/DescriptionProfile/DescriptionProfile';
+import Profile from 'components/DescriptionProfile/Profile';
 import Statistics from './Statistics/Statistics';
 import FriendListItem from './FriendList/FriendList';
 import Transactions from './TransactionHistory/TransactionHistory';
@@ -10,7 +10,7 @@ import transactions from './TransactionHistory/transactions.json';
 export default function App() {
   return (
     <>
-      <DescriptionProfile
+      <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -41,7 +41,7 @@ export default function App() {
         ))}
       </ul>
 
-      <table class="transaction-history">
+      <table className="transaction-history">
         <tbody>
           {transactions.map(transaction => (
             <Transactions
