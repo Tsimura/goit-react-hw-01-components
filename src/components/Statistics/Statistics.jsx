@@ -5,12 +5,10 @@ import data from './data.json';
 
 const Statistics = ({ label, percentage }) => {
   return (
-    <ul className="stat-list">
-      <li className="item">
-        <span className="label">{label}</span>
-        <span className="percentage">{percentage}</span>
-      </li>
-    </ul>
+    <li className="item">
+      <span className="label">{label}</span>
+      <span className="percentage">{percentage + '%'}</span>
+    </li>
   );
 };
 Statistics.propTypes = {
@@ -19,7 +17,24 @@ Statistics.propTypes = {
 };
 export default Statistics;
 
-{
-  /* <Statistics title="Upload stats" stats={data} />;
+// {
+/* <section class="statistics">
+  <h2 class="title">Upload stats</h2>
+
+  <ul class="stat-list">
+    <li class="item">
+      <span class="label">.docx</span>
+      <span class="percentage">4%</span>
+    </li>...
+   
+  </ul>
+</section>; */
+// }
+
+// {
+/* 
+<Statistics title="Upload stats" stats={data} />;
 <Statistics stats={data} />; */
-}
+// }
+
+// https://youtu.be/kfX5HTQD26E?t=5050
