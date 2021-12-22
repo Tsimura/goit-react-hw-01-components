@@ -1,13 +1,16 @@
 import PropTypes from 'prop-types';
+import TransactionsTableHead from 'components/TransactionTableHead/TransactionTableHead';
+import TransactionsTableBody from 'components/TransactionTableBody/TransactionTableBody';
 import transactions from './transactions.json';
 
-const Transactions = ({ type, amount, currency }) => {
+const Transactions = () => {
   return (
-    <tr>
-      <td>{type}</td>
-      <td>{amount}</td>
-      <td>{currency}</td>
-    </tr>
+    <>
+      <table className="transaction-history">
+        <TransactionsTableHead />
+        <TransactionsTableBody items={transactions} />
+      </table>
+    </>
   );
 };
 
@@ -18,26 +21,3 @@ Transactions.propTypes = {
 };
 
 export default Transactions;
-
-// <table class="transaction-history">
-//   <thead>
-//     <tr>
-//       <th>Type</th>
-//       <th>Amount</th>
-//       <th>Currency</th>
-//     </tr>
-//   </thead>
-
-//   <tbody>
-//     <tr>
-//       <td>Invoice</td>
-//       <td>125</td>
-//       <td>USD</td>
-//     </tr>
-//     <tr>
-//       <td>Withdrawal</td>
-//       <td>85</td>
-//       <td>USD</td>
-//     </tr>
-//   </tbody>
-// </table>

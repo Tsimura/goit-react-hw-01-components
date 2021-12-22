@@ -1,6 +1,6 @@
 import Profile from 'components/Profile/Profile';
 import Statistics from './Statistics/Statistics';
-import FriendListItem from './FriendList/FriendList';
+// import FriendListItem from './FriendList/FriendList';
 import Transactions from './TransactionHistory/TransactionHistory';
 import FriendList from './FriendList/FriendList';
 
@@ -26,6 +26,7 @@ export default function App() {
       </>
       <FriendList friends={friends} />
 
+      <Transactions items={transactions} />
       {/* <table className="transaction-history">
         <tbody>
           {transactions.map(transaction => (
