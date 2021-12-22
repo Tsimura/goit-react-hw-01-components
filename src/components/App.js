@@ -1,11 +1,9 @@
 import Profile from 'components/Profile/Profile';
 import Statistics from './Statistics/Statistics';
-import StatisticsSection from './StatisticsSection/StatisticsSection';
 import FriendListItem from './FriendList/FriendList';
 import Transactions from './TransactionHistory/TransactionHistory';
 
 import user from './Profile/user.json';
-import data from './Statistics/data.json';
 import friends from './FriendList/friends.json';
 import transactions from './TransactionHistory/transactions.json';
 
