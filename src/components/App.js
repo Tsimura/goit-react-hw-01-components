@@ -1,5 +1,6 @@
 import Profile from 'components/Profile/Profile';
 import Statistics from './Statistics/Statistics';
+import StatisticsSection from './StatisticsSection/StatisticsSection';
 import FriendListItem from './FriendList/FriendList';
 import Transactions from './TransactionHistory/TransactionHistory';
 
@@ -11,7 +12,7 @@ import transactions from './TransactionHistory/transactions.json';
 export default function App() {
   return (
     <>
-      <Profile
+      {/* <Profile
         username={user.username}
         tag={user.tag}
         location={user.location}
@@ -19,8 +20,12 @@ export default function App() {
         followers={user.stats.followers}
         views={user.stats.views}
         likes={user.stats.likes}
-      />
-      <section className="statistics">
+      /> */}
+
+      <>
+        <Statistics />
+      </>
+      {/* <section className="statistics">
         <h2 className="title">Upload stats</h2>
         <ul className="stat-list">
           {data.map(data => (
@@ -31,9 +36,9 @@ export default function App() {
             />
           ))}
         </ul>
-      </section>
+      </section> */}
 
-      <ul className="friend-list">
+      {/* <ul className="friend-list">
         {friends.map(friend => (
           <FriendListItem
             key={friend.id}
@@ -42,9 +47,9 @@ export default function App() {
             isOnline={friend.isOnline}
           />
         ))}
-      </ul>
+      </ul> */}
 
-      <table className="transaction-history">
+      {/* <table className="transaction-history">
         <tbody>
           {transactions.map(transaction => (
             <Transactions
@@ -55,7 +60,7 @@ export default function App() {
             />
           ))}
         </tbody>
-      </table>
+      </table> */}
     </>
   );
 }
