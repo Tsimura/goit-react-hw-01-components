@@ -1,20 +1,20 @@
 import PropTypes from 'prop-types';
+import FriendListItem from 'components/FriendListItem/FriendListItem';
 import friends from './friends.json';
 
-const FriendListItem = ({ isOnline, avatar, name }) => {
+const FriendList = () => {
+  console.log(friends);
   return (
-    <li className="item">
-      <span className="status">{isOnline}</span>
-      <img className="avatar" src={avatar} alt="User avatar" width="48" />
-      <p className="name">{name}</p>
-    </li>
+    <ul className="friend-list">
+      <FriendListItem friends={friends} />
+    </ul>
   );
 };
 
-FriendListItem.propTypes = {
+FriendList.propTypes = {
   avatar: PropTypes.string,
   name: PropTypes.string,
   isOnline: PropTypes.bool,
 };
 
-export default FriendListItem;
+export default FriendList;
