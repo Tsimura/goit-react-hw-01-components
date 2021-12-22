@@ -1,11 +1,11 @@
 import PropTypes from 'prop-types';
 import StatisticsSection from '../StatisticsSection/StatisticsSection';
-import data from './data.json';
+import stats from './data.json';
 
 const Statistics = () => {
   return (
     <>
-      <StatisticsSection data={data} />
+      <StatisticsSection stats={stats} />
     </>
   );
 };
