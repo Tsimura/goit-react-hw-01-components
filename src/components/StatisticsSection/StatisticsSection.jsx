@@ -5,7 +5,7 @@ const StatisticsSection = () => {
   return (
     <>
       <section className="statistics">
-        <StatisticsTitle />
+        <StatisticsTitle stats={stats} />
         <StatisticsList stats={stats} />
       </section>
     </>

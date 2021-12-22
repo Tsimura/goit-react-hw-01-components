@@ -1,5 +1,5 @@
 const StatisticsList = ({ stats }) => {
-  console.log(stats);
+  //   console.log(stats);
   return (
     <ul className="stat-list">
       {stats.map(data => (
