@@ -1,9 +1,9 @@
 import PropTypes from 'prop-types';
-import TransactionsTableHead from 'components/TransactionTableHead/TransactionTableHead';
-import TransactionsTableBody from 'components/TransactionTableBody/TransactionTableBody';
+import { TransactionsTableHead } from 'components/TransactionTableHead/TransactionTableHead';
+import { TransactionsTableBody } from 'components/TransactionTableBody/TransactionTableBody';
 import transactions from './transactions.json';
 
-const Transactions = () => {
+export const Transactions = () => {
   return (
     <>
       <table className="transaction-history">
@@ -15,9 +15,5 @@ const Transactions = () => {
 };
 
 Transactions.propTypes = {
-  type: PropTypes.string,
-  amount: PropTypes.string,
-  currency: PropTypes.string,
+  items: PropTypes.array,
 };
-
-export default Transactions;

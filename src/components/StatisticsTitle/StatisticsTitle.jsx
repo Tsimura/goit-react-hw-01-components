@@ -1,7 +1,9 @@
-import stats from 'components/Statistics/data.json';
-const StatisticsTitle = () => {
-  const titleEl = false;
-  console.log(stats);
-  return <>{titleEl && <h2 class="title">Upload stats</h2>}</>;
+import PropTypes from 'prop-types';
+
+export const StatisticsTitle = ({ title }) => {
+  return <>{title && <h2 class="title">{title}</h2>}</>;
 };
-export default StatisticsTitle;
+
+StatisticsTitle.propTypes = {
+  title: PropTypes.string,
+};

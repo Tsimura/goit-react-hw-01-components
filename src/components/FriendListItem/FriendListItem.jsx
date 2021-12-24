@@ -1,23 +1,17 @@
-const FriendListItem = ({ friends }) => {
-  console.log('friends:', friends);
+import PropTypes from 'prop-types';
+
+export const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <>
-      {friends.map(friend => (
-        <li className="item" key={friend.id}>
-          <span className="status">
-            {friend.isOnline ? 'online' : 'offline'}
-          </span>
-          <img
-            className="avatar"
-            src={friend.avatar}
-            alt="User avatar"
-            width="48"
-          />
-          <p className="name">{friend.name}</p>
-        </li>
-      ))}
+      <span className="status">{isOnline ? 'online' : 'offline'}</span>
+      <img className="avatar" src={avatar} alt="User avatar" width="48" />
+      <p className="name">{name}</p>
     </>
   );
 };
 
-export default FriendListItem;
+FriendListItem.propTypes = {
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};

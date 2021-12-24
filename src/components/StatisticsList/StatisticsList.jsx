@@ -1,15 +1,20 @@
-const StatisticsList = ({ stats }) => {
-  //   console.log(stats);
+import PropTypes from 'prop-types';
+import { StatisticsItem } from 'components/StatisticsItem/StatisticsItem';
+
+export const StatisticsList = ({ stats }) => {
   return (
     <ul className="stat-list">
       {stats.map(data => (
         <li className="item" key={data.id}>
-          <span className="label">{data.label}</span>
-          <span className="percentage">{data.percentage}%</span>
+          <StatisticsItem label={data.label} percentage={data.percentage} />
         </li>
       ))}
     </ul>
   );
 };
 
-export default StatisticsList;
+StatisticsList.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({ id: PropTypes.string.isRequired }),
+  ),
+};

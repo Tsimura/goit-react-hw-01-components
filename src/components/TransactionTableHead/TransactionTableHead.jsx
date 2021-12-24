@@ -1,6 +1,4 @@
-// import items from 'components/TransactionHistory/transactions.json';
-const TransactionsTableHead = () => {
-  //   console.log(items);
+export const TransactionsTableHead = () => {
   return (
     <>
       <thead>
@@ -13,5 +11,3 @@ const TransactionsTableHead = () => {
     </>
   );
 };
-
-export default TransactionsTableHead;
