@@ -7,23 +7,3 @@ tr th {
   border-color: #dbd9d9;
   padding: 10px 20px;
 }
-
-td {
-  color: #757575;
-  width: 240px;
-  height: 28px;
-  text-align: center;
-  border-style: solid;
-  border-width: 0 1px 1px 0;
-  border-color: #dbd9d9;
-}
-
-td:first-child {
-  text-transform: capitalize;
-}
-tr:nth-child(odd) {
-  background: white;
-}
-tr:nth-child(even) {
-  background: #e9e8e8;
-}

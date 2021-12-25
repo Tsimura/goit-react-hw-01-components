@@ -1,0 +1,6 @@
+tr:nth-child(odd) {
+  background: white;
+}
+tr:nth-child(even) {
+  background: #e9e8e8;
+}
