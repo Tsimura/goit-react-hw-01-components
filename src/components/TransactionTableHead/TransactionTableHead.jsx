@@ -1,3 +1,4 @@
+import css from 'components/TransactionTableHead/TransactionTableHead.module.css';
 export const TransactionsTableHead = () => {
   return (
     <>

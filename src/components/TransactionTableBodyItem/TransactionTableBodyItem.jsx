@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import css from 'components/TransactionTableBodyItem/TransactionTableBodyItem.module.css';
 
 export const TransactionsTableBodyItem = ({ type, amount, currency }) => {
   return (

@@ -11,6 +11,7 @@
   padding: 10px;
 }
 
+/* написати функцію */
 .statList .item:nth-child(1) {
   background-color: rgb(121, 187, 224);
 }
