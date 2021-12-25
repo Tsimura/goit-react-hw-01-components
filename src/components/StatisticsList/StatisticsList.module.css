@@ -10,20 +10,3 @@
   width: 44px;
   padding: 10px;
 }
-
-/* написати функцію */
-.statList .item:nth-child(1) {
-  background-color: rgb(121, 187, 224);
-}
-.statList .item:nth-child(2) {
-  background-color: rgb(126, 60, 212);
-}
-.statList .item:nth-child(3) {
-  background-color: rgb(245, 46, 20);
-}
-.statList .item:nth-child(4) {
-  background-color: rgb(45, 186, 221);
-}
-.statList .item:nth-child(5) {
-  background-color: rgb(45, 221, 60);
-}
