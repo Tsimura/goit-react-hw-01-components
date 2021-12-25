@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import { StatisticsItem } from 'components/StatisticsItem/StatisticsItem';
+import css from 'components/StatisticsList/StatisticsList.module.css';
 
 export const StatisticsList = ({ stats }) => {
   return (
-    <ul className="stat-list">
+    <ul className={css.statList}>
       {stats.map(data => (
-        <li className="item" key={data.id}>
+        <li className={css.item} key={data.id}>
           <StatisticsItem label={data.label} percentage={data.percentage} />
         </li>
       ))}
