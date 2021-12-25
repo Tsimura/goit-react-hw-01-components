@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import 'components/Profile/Profile.css';
 
 export const Profile = ({
   username = 'user not found',

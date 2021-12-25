@@ -7,6 +7,7 @@ import { FriendList } from './FriendList/FriendList';
 import user from './Profile/user.json';
 import friends from './FriendList/friends.json';
 import transactions from './TransactionHistory/transactions.json';
+import 'components/App.css';
 
 export function App() {
   return (
