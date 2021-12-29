@@ -1,9 +1,7 @@
-import PropTypes from 'prop-types';
 import { StatisticsTitle } from 'components/StatisticsTitle/StatisticsTitle';
 import { StatisticsList } from 'components/StatisticsList/StatisticsList';
 import data from './data.json';
 import css from 'components/Statistics/Statistics.module.css';
-
 export const Statistics = () => {
   return (
     <>
@@ -13,8 +11,4 @@ export const Statistics = () => {
       </section>
     </>
   );
-};
-
-Statistics.propTypes = {
-  data: PropTypes.array,
 };

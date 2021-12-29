@@ -1,13 +1,6 @@
 import PropTypes from 'prop-types';
 import css from 'components/Profile/Profile.module.css';
-
-export const Profile = ({
-  username = 'user not found',
-  tag,
-  location,
-  avatar,
-  stats,
-}) => {
+export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <div className={css.profile}>
       <div className={css.description}>
@@ -16,7 +9,6 @@ export const Profile = ({
         <p className={css.tag}>{'@' + tag}</p>
         <p className={css.location}>{location}</p>
       </div>
-
       <ul className={css.stats}>
         <li>
           <span className={css.label}>Followers</span>
@@ -34,7 +26,9 @@ export const Profile = ({
     </div>
   );
 };
-
+Profile.defaultProps = {
+  username: 'user not found',
+};
 Profile.propTypes = {
   username: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
